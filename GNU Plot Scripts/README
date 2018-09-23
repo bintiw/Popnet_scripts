@@ -1,0 +1,1 @@
+This folder contains GNU plot file, that plots delay, throughput, power for the files in all_delay, all_throughput, all_power files respectively.
