@@ -1,6 +1,7 @@
 #! /usr/bin/python
 
 #Multicast Destination from 0 to 2^64
+# Traffic generation file, this will generate traffic for 8x8 mesh with flit size 4 with 10% multicast and 90% unicast traffic that is uniformly distributed
 
 import random
 import glob 
@@ -17,7 +18,7 @@ flit = 4
 ary = 8
 lamb = float(sys.argv[1])
 pac_number = int(20000*lamb)
-uc = 1
+uc = 0.9
 mc = 1-uc
 uc_c = int (pac_number*uc)
 mc_c = pac_number - uc_c
@@ -29,7 +30,6 @@ tot = 0
 
 def mc_dst(aa):
 	#print "---------------"
-	#print aa
 	items = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]
 	#samp_range = random.randint(2,5)
 	#samp_range = random.randint(7,10)
@@ -105,30 +105,4 @@ def main():
 
 if __name__== "__main__":
   main()
-
   print tot+uc_c*64
-  ##=print mc_dst(35)
-
-
-
-
-
-
-"""
-// bitset::set
-#include <iostream>       // std::cout
-#include <bitset>         // std::bitset
-
-int main ()
-{ long mc_dst = 36046389209464832;
-  std::string binary_dst = std::bitset<64>(mc_dst).to_string();
- for(int i=0; i<binary_dst.size();i++)
-    {  if(binary_dst[i] == '1')
-     {
-         std::cout<<i<<"\n";
-         }
-     }
-
-  return 0;
-}
-"""
