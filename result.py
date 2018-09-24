@@ -1,5 +1,5 @@
 #! /usr/bin/python
-
+#This is a script to create a file in a format compatible with GNU Plot
 import os
 import sys
 os.chdir("/home/bintiw/Desktop")
