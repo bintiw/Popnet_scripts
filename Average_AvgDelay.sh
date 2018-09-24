@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #ssmtp binayaktiwari@gmail.com < /home/bintiw/start
-
+#This is a script to run the simulation and plot the simulation result#
 ##---------------------------------------------------------------------------------------##
 
 for i in {1..1}
