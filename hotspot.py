@@ -1,5 +1,5 @@
 #! /usr/bin/python
-
+#This is a script to run a hotspot simulation for a 8x8 mesh network and plot the heat map
 import subprocess
 import os
 import sys
