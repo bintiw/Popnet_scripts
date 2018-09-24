@@ -1,2 +1,2 @@
 # Popnet_scripts
-Scripts written to maintain popnet network simulator. 
+Scripts written to automate popnet network simulator. 
