@@ -1,9 +1,10 @@
 #! /usr/bin/python
+#This is a utility function to generate a 8x8 mesh trace file 
 import subprocess
 import os
 
 os.chdir("/home/bintiw/Desktop/popnet/trace")
-ary = 8
+ary = 8 #Mesh dimension
 
 subprocess.call("sort bench_notsorted -h > bench",shell=True)
 f = open("bench","a+")
